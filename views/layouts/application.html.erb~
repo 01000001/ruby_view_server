@@ -1,4 +1,8 @@
-
+<%
+    def link_to(name, url)
+        return "<a href='#{url}'>#{name}</a>"
+     end
+    %>
 
 <html>
   <body>
@@ -6,24 +10,12 @@
     <p>
       <h3> I'm a header</h3>
       <p>Put things in the header</p>
-      <a href='http://google.com'>This is a link to google</a>
       <a href='me.html'>Me</a>
 
     </p>
     <hr />
     <div>
-      <h1> Hello</h1>
-<p>
-  The time is now:
-  2013-09-09 10:47:04 +0200
-</p>
-
-<p>
-  My Name is:
-  
-</p>
-
-
+      <%= yield %>
     </div>
     <hr />
     <div>
