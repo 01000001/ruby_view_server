@@ -6,4 +6,4 @@ puts template.result(binding)
 
 z = "Hello World!"
 template_2 = ERB.new "The value of z is: <%= z %>"
-puts template_2.result(binding)
+puts template2.result(binding)
